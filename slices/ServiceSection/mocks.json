@@ -1,0 +1,77 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "FieldContent",
+				"value": "like",
+				"type": "Text"
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Velit laborum eu irure est fugiat tempor dolore ad esse incididunt. Officia aliqua veniam cillum anim occaecat consequat. Anim non ea quis veniam occaecat deserunt ea velit laborum deserunt excepteur sint aliquip."
+						}
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"service_image",
+						{
+							"__TYPE__": "ImageContent",
+							"origin": {
+								"id": "main",
+								"url": "https://images.unsplash.com/photo-1589321599763-d66926c29613",
+								"width": 3168,
+								"height": 4752
+							},
+							"url": "https://images.unsplash.com/photo-1589321599763-d66926c29613",
+							"width": 3168,
+							"height": 4752,
+							"edit": {
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								},
+								"background": "transparent"
+							},
+							"thumbnails": {}
+						}
+					],
+					[
+						"service_title",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "organization",
+							"type": "Text"
+						}
+					],
+					[
+						"service_description",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Velit quis Lorem quis anim mollit."
+									}
+								}
+							]
+						}
+					]
+				]
+			}
+		]
+	}
+]

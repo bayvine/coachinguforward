@@ -1,0 +1,64 @@
+{
+  "id": "session_scheduling",
+  "type": "SharedSlice",
+  "name": "SessionScheduling",
+  "description": "SessionScheduling",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "Title",
+            "placeholder": ""
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        }
+      },
+      "items": {
+        "button_color": {
+          "type": "Select",
+          "config": {
+            "label": "Button_color",
+            "placeholder": "",
+            "options": [
+              "White background, green border, green text",
+              "Green background, white text",
+              "Blue background, white text"
+            ],
+            "default_value": "White background, green border, green text"
+          }
+        },
+        "button_link": {
+          "type": "Link",
+          "config": {
+            "label": "Button link",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "button_text": {
+          "type": "Text",
+          "config": {
+            "label": "Button text",
+            "placeholder": ""
+          }
+        }
+      }
+    }
+  ]
+}

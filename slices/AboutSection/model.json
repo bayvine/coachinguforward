@@ -1,0 +1,71 @@
+{
+  "id": "about_section",
+  "type": "SharedSlice",
+  "name": "AboutSection",
+  "description": "AboutSection",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "Meet your coach, Ann",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "cta_label": {
+          "type": "Text",
+          "config": { "label": "CTA label", "placeholder": "" }
+        },
+        "free_consultation_label": {
+          "type": "Text",
+          "config": { "label": "Free consultation label", "placeholder": "" }
+        },
+        "anns_profile_picture": {
+          "type": "Image",
+          "config": {
+            "label": "Anns profile picture",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "credential_symbol": {
+          "type": "Image",
+          "config": {
+            "label": "Credential symbol",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      },
+      "items": {
+        "paragraph": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Paragraph",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "quote_field": {
+          "type": "StructuredText",
+          "config": {
+            "label": "quote field",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        }
+      }
+    }
+  ]
+}

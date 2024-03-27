@@ -1,0 +1,59 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "FieldContent",
+				"value": "so",
+				"type": "Text"
+			},
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Reprehenderit occaecat sunt tempor cupidatat. Elit eu nulla enim aute incididunt enim consequat voluptate consequat reprehenderit aliquip elit consectetur elit."
+						}
+					}
+				]
+			},
+			"contact_information_title": {
+				"__TYPE__": "FieldContent",
+				"value": "forward",
+				"type": "Text"
+			},
+			"contact_information_description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Sit consequat exercitation esse nulla ea quis ex commodo ex exercitation cillum culpa aliqua in."
+						}
+					}
+				]
+			},
+			"show_social_media": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"inquiry_option",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "built",
+							"type": "Text"
+						}
+					]
+				]
+			}
+		]
+	}
+]

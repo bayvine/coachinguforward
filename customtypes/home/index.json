@@ -1,0 +1,202 @@
+{
+  "id": "home",
+  "label": "home",
+  "format": "page",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "reasons_for_coaching": {
+              "type": "SharedSlice"
+            },
+            "service_section": {
+              "type": "SharedSlice"
+            },
+            "session_scheduling": {
+              "type": "SharedSlice"
+            },
+            "newsletter_section": {
+              "type": "SharedSlice"
+            },
+            "image_carousel": {
+              "type": "SharedSlice"
+            },
+            "hero_banner": {
+              "type": "SharedSlice"
+            },
+            "contact_section": {
+              "type": "SharedSlice"
+            },
+            "blog_slider": {
+              "type": "SharedSlice"
+            },
+            "about_section": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    },
+    "SEO & Metadata": {
+      "meta_description": {
+        "config": {
+          "label": "Meta Description",
+          "placeholder": "A brief summary of the page"
+        },
+        "type": "Text"
+      },
+      "meta_image": {
+        "config": {
+          "constraint": {
+            "height": 1260,
+            "width": 2400
+          },
+          "label": "Meta Image",
+          "thumbnails": []
+        },
+        "type": "Image"
+      },
+      "meta_title": {
+        "config": {
+          "label": "Meta Title",
+          "placeholder": "A title of the page used for social media and search engines"
+        },
+        "type": "Text"
+      }
+    },
+    "Social media links": {
+      "whatsapp": {
+        "type": "Link",
+        "config": {
+          "label": "Whatsapp",
+          "placeholder": "",
+          "select": null
+        }
+      },
+      "facebook": {
+        "type": "Link",
+        "config": {
+          "label": "Facebook",
+          "placeholder": "",
+          "select": null
+        }
+      },
+      "twitter": {
+        "type": "Link",
+        "config": {
+          "label": "Twitter",
+          "placeholder": "",
+          "select": null
+        }
+      },
+      "instagram": {
+        "type": "Link",
+        "config": {
+          "label": "Instagram",
+          "placeholder": "",
+          "select": null
+        }
+      },
+      "linkedin": {
+        "type": "Link",
+        "config": {
+          "label": "Linkedin",
+          "placeholder": "",
+          "select": null
+        }
+      }
+    },
+    "General information": {
+      "your_business_name": {
+        "type": "Text",
+        "config": {
+          "label": "Your business name",
+          "placeholder": ""
+        }
+      },
+      "your_business_motto": {
+        "type": "Text",
+        "config": {
+          "label": "Your business motto",
+          "placeholder": ""
+        }
+      },
+      "location": {
+        "type": "Text",
+        "config": {
+          "label": "Location (City, State, Country)",
+          "placeholder": ""
+        }
+      },
+      "email_address": {
+        "type": "Text",
+        "config": {
+          "label": "Email address",
+          "placeholder": ""
+        }
+      },
+      "phone_number": {
+        "type": "Text",
+        "config": {
+          "label": "Phone number",
+          "placeholder": ""
+        }
+      },
+      "hours_opened": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Hours opened",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        }
+      },
+      "copyright_label": {
+        "type": "Text",
+        "config": {
+          "label": "Copyright label",
+          "placeholder": ""
+        }
+      }
+    },
+    "Newsletter": {
+      "api_link": {
+        "type": "Link",
+        "config": {
+          "label": "API Link",
+          "placeholder": "",
+          "select": null
+        }
+      },
+      "newsletter_title": {
+        "type": "Text",
+        "config": {
+          "label": "Newsletter title",
+          "placeholder": ""
+        }
+      },
+      "newsletter_description": {
+        "type": "Text",
+        "config": {
+          "label": "Newsletter description",
+          "placeholder": ""
+        }
+      }
+    },
+    "Consultation": {
+      "calendar_link": {
+        "type": "Link",
+        "config": {
+          "label": "Calendar link",
+          "placeholder": "",
+          "select": null
+        }
+      }
+    }
+  }
+}

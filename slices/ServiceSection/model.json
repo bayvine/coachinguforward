@@ -1,0 +1,54 @@
+{
+  "id": "service_section",
+  "type": "SharedSlice",
+  "name": "ServiceSection",
+  "description": "ServiceSection",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "Text",
+          "config": { "label": "Title", "placeholder": "" }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        }
+      },
+      "items": {
+        "service_image": {
+          "type": "Image",
+          "config": {
+            "label": "Service image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "service_title": {
+          "type": "Text",
+          "config": { "label": "Service title", "placeholder": "" }
+        },
+        "service_description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Service description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        }
+      }
+    }
+  ]
+}

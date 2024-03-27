@@ -1,8 +1,62 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
+import { PrismicPreview } from "@prismicio/next";
+import { repositoryName } from "@/prismicio";
+import localFont from 'next/font/local'
+ 
+// Font files can be colocated inside of `app`
+const Hind = localFont({
+  src: [
+    {
+      path: './fonts/Hind_Complete/Fonts/WEB/fonts/Hind-Light.woff', 
+      weight: '300', 
+      style: 'normal'
+    },
+    {
+      path: './fonts/Hind_Complete/Fonts/WEB/fonts/Hind-Regular.woff', 
+      weight: '400', 
+      style: 'normal'
+    }, 
+    {
+      path: './fonts/Hind_Complete/Fonts/WEB/fonts/Hind-Medium.woff', 
+      weight: '500', 
+      style: 'normal'
+    },
+    {
+      path: './fonts/Hind_Complete/Fonts/WEB/fonts/Hind-Semibold.woff', 
+      weight: '600', 
+      style: 'normal'
+    },
+    {
+      path: './fonts/Hind_Complete/Fonts/WEB/fonts/Hind-Bold.woff', 
+      weight: '700', 
+      style: 'normal'
+      
+    }
+  ],
+  variable: '--font-hind',
+})
 
-const inter = Inter({ subsets: ["latin"] });
+const GeneralSans = localFont({
+  src: [
+    {
+      path: './fonts/General_Sans/Fonts/WEB/fonts/GeneralSans-Medium.woff', 
+      weight: '500', 
+      style: 'normal'
+    },
+    {
+      path: './fonts/General_Sans/Fonts/WEB/fonts/GeneralSans-Semibold.woff', 
+      weight: '600', 
+      style: 'normal'
+    },
+    {
+      path: './fonts/General_Sans/Fonts/WEB/fonts/GeneralSans-Bold.woff', 
+      weight: '700', 
+      style: 'normal'
+    }
+  ],
+  variable: '--font-generalsans',
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +70,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${Hind.variable} ${GeneralSans.variable}`}>
+        {children}
+          <PrismicPreview repositoryName={repositoryName} />
+      </body>
     </html>
   );
 }

@@ -1,0 +1,35 @@
+{
+  "format": "custom",
+  "id": "menu",
+  "label": "Menu",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "label_for_consultation": {
+        "type": "Text",
+        "config": {
+          "label": "Label for consultation",
+          "placeholder": ""
+        }
+      },
+      "logo_title": {
+        "type": "Image",
+        "config": {
+          "label": "Logo title",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "title": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Title",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        }
+      }
+    }
+  }
+}

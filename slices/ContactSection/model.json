@@ -1,0 +1,68 @@
+{
+  "id": "contact_section",
+  "type": "SharedSlice",
+  "name": "ContactSection",
+  "description": "ContactSection",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "Title",
+            "placeholder": ""
+          }
+        },
+        "subtitle": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Subtitle",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "contact_information_title": {
+          "type": "Text",
+          "config": {
+            "label": "Contact information title",
+            "placeholder": ""
+          }
+        },
+        "contact_information_description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Contact information description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "show_social_media": {
+          "type": "Boolean",
+          "config": {
+            "label": "Show social media",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
+        }
+      },
+      "items": {
+        "inquiry_option": {
+          "type": "Text",
+          "config": {
+            "label": "Inquiry option",
+            "placeholder": ""
+          }
+        }
+      }
+    }
+  ]
+}

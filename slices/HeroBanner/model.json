@@ -1,0 +1,67 @@
+{
+  "id": "hero_banner",
+  "type": "SharedSlice",
+  "name": "HeroBanner",
+  "description": "HeroBanner",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "background_media": {
+          "type": "Link",
+          "config": {
+            "label": "Background Media",
+            "placeholder": "",
+            "select": "media"
+          }
+        },
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "title_description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "cta_label": {
+          "type": "Text",
+          "config": {
+            "label": "CTA Label",
+            "placeholder": ""
+          }
+        },
+        "contact_button_label": {
+          "type": "Text",
+          "config": {
+            "label": "Contact Button Label",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {
+        "credentials": {
+          "type": "Text",
+          "config": {
+            "label": "credentials",
+            "placeholder": ""
+          }
+        }
+      }
+    }
+  ]
+}
