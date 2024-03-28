@@ -8,7 +8,7 @@ const SectionWrapper = ({ className, children, id = "" }: {
 }) => {
 	return (
 		<section id={id} className={clsx([className])}>
-			<div className="w-full  mx-auto sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl p-5">
+			<div className="w-full mx-auto sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl px-5 py-2">
 				{children}
 			</div>
 		</section>

@@ -1,3 +1,4 @@
+import SectionWrapper from "@/components/SectionWrapper";
 import { Content } from "@prismicio/client";
 import { SliceComponentProps } from "@prismicio/react";
 
@@ -12,13 +13,14 @@ export type SessionSchedulingProps =
  */
 const SessionScheduling = ({ slice }: SessionSchedulingProps): JSX.Element => {
   return (
-    <section
+    <SectionWrapper
+      id={slice.slice_type}
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
     >
       Placeholder component for session_scheduling (variation: {slice.variation}
       ) Slices
-    </section>
+    </SectionWrapper>
   );
 };
 

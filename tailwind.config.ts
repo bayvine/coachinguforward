@@ -11,7 +11,8 @@ const config: Config = {
     extend: {
       fontFamily: {
         title: ['var(--font-generalsans)'],
-        body: ['var(--font-hind)'],
+        body: ['var(--font-poppins)'],
+        quote: ['var(--font-quote)'],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -20,7 +21,9 @@ const config: Config = {
       },
 
       colors: {
-        'primary': '#AFD7B3'
+        'primary': '#AFD7B3',
+        'dark': '#171717',
+        'secondary': '#8FB8CA'
       }
     },
   },

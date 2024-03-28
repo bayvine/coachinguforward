@@ -15,12 +15,11 @@ export type ServiceSectionProps =
 const ServiceSection = ({ slice }: ServiceSectionProps): JSX.Element => {
   return (
     <SectionWrapper
-        id={slice.slice_type}
-      
+      id={slice.slice_type}
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
     >
-      <h2 className="font-title uppercase font-bold text-4xl">
+      <h2 className="font-title uppercase font-bold text-3xl">
         {slice.primary.title}
       </h2>
       <p className="py-2"><PrismicRichText field={slice.primary.description} /></p>
@@ -30,7 +29,7 @@ const ServiceSection = ({ slice }: ServiceSectionProps): JSX.Element => {
             <Image alt={item.service_image.alt || ""} className="object-cover w-full aspect-square mb-3" src={item.service_image?.url || ""} width={item.service_image.dimensions?.width} height={item.service_image.dimensions?.height} />
             <span className="font-bold text-xl">{item.service_title
             }</span>
-            <p className="text-lg">
+            <p className="">
               <PrismicRichText field={item.service_description} />
             </p>
           </article>

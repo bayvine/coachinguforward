@@ -1,0 +1,24 @@
+/**
+ * @license
+ *
+ * Font Family: Boska
+ * Designed by: Barbara Bigosinska
+ * URL: https://www.fontshare.com/fonts/boska
+ * © 2024 Indian Type Foundry
+ *
+ * Font Style:
+ * Boska Italic
+ *
+*/
+
+
+@font-face {
+  font-family: 'Boska-Italic';
+  src: url('../fonts/Boska-Italic.woff2') format('woff2'),
+       url('../fonts/Boska-Italic.woff') format('woff'),
+       url('../fonts/Boska-Italic.ttf') format('truetype');
+       font-weight: 400;
+       font-display: swap;
+       font-style: italic;
+}
+

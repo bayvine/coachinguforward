@@ -7,7 +7,7 @@ body {
   box-sizing: border-box;
 	padding: 0;
 	margin: 0;
-  font-family: var(--font-hind);
+  font-family: var(--font-poppins);
 	-ms-overflow-style: none; /* IE and Edge */
 	scrollbar-width: none; /* Firefox */
 	--scroll-behavior: smooth !important;
