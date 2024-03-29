@@ -8,7 +8,7 @@ import Image from "next/image";
 /**
  * Props for `HeroBanner`.
  */
-export type HeroBannerProps = SliceComponentProps<Content.HeroBannerSlice>;
+export type HeroBannerProps = SliceComponentProps<Content.HeroBannerSlice> & any;
 
 /**
  * Component for "HeroBanner" Slices.
