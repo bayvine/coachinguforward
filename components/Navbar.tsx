@@ -18,7 +18,7 @@ const Navbar = () => {
      const handleMenu = () => setMobileMenu((prev) => !prev)
      
      const changeNavBg = () => {
-     const heroBannerHeight = document.getElementById('hero_banner')?.offsetHeight || 500
+     const heroBannerHeight = document.getElementById('hero_banner')?.offsetHeight as number / 2  || 300
      window.scrollY >= heroBannerHeight  ? setNavBg(true) : setNavBg(false);
      }
 

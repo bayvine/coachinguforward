@@ -15,8 +15,14 @@ const SectionWrapper =
 	const Component = as
 		
 	return (
-		<Component id={id} className={clsx([className])} {...props}>
-		<div className="w-full mx-auto sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl px-5 py-4">
+		<Component id={id} className={clsx(['overflow-hidden', className])} {...props}>
+			<div className="w-full mx-auto 
+						sm:max-w-lg 
+						md:max-w-2xl
+						lg:max-w-4xl 
+						xl:max-w-6xl
+						2xl:max-w-7xl
+						px-5 py-4">
 			{props.children}
 		</div>
 		</Component>
