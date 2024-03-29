@@ -22,10 +22,10 @@ const HeroBanner = ({ slice }: HeroBannerProps): JSX.Element => {
       data-slice-variation={slice.variation}
     >
   
-      <div className="z-10 relative">
-        <h1 className="text-3xl font-title font-bold uppercase text-center">
+      <div className="z-10 relative flex justify-center flex-col items-center">
+        <h1 className="text-3xl font-title font-semibold text-center">
           <PrismicRichText field={slice.primary.title} components={{
-          strong: (payload) => <strong className="text-primary underline">{payload.children}</strong>
+          strong: (payload) => <strong className="font-semibold text-primary underline"><br />{payload.children}</strong>
           }}/>
         </h1>
       
@@ -34,9 +34,9 @@ const HeroBanner = ({ slice }: HeroBannerProps): JSX.Element => {
         </div>
         {/* Button group */}
         <div className="mt-4 flex flex-col gap-3 items-center">
-          <Button type="primary" className="w-full">Get a free consultation</Button>
+          <Button styleType="primary" className="w-full">Get a free consultation</Button>
           <span>Or</span>
-          <Button type="no-style-secondary" className="w-fit">Contact me</Button>
+          <Button styleType="no-style-secondary">Contact me</Button>
         </div>
       </div>
 

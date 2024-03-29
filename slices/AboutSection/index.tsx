@@ -24,7 +24,7 @@ const AboutSection = ({ slice }: AboutSectionProps): JSX.Element => {
       <div className="flex flex-col gap-10">
 
         <div>
-          <h3 className="text-3xl font-title font-bold mb-8">
+          <h3 className="text-3xl font-title font-semibold mb-8">
           <PrismicRichText components={{
             strong: (payload) => <strong className="text-primary">{payload.children}</strong>
           }} field={slice.primary.title} />
@@ -52,8 +52,8 @@ const AboutSection = ({ slice }: AboutSectionProps): JSX.Element => {
           </div>  
           {/* Button group */}
           <div className="flex flex-col gap-4">
-          <Button type="primary">Book your session</Button>
-          <Button type='tertiary'>Book a free introduction</Button>
+          <Button styleType="primary">Book your session</Button>
+          <Button styleType='tertiary'>Book a free introduction</Button>
           </div>
         </div>
       </div>

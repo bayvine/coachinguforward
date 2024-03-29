@@ -79,20 +79,12 @@ const Poppins = localFont({
 const GeneralSans = localFont({
   src: [
     {
-      path: './fonts/General_Sans/Fonts/WEB/fonts/GeneralSans-Medium.woff', 
-      weight: '500', 
-      style: 'normal'
+      path: './fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf', 
     },
     {
-      path: './fonts/General_Sans/Fonts/WEB/fonts/GeneralSans-Semibold.woff', 
-      weight: '600', 
-      style: 'normal'
-    },
-    {
-      path: './fonts/General_Sans/Fonts/WEB/fonts/GeneralSans-Bold.woff', 
-      weight: '700', 
-      style: 'normal'
-    }
+      path: './fonts/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf', 
+      style: 'italic'
+    }, 
   ],
   variable: '--font-generalsans',
 })
@@ -117,8 +109,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${Poppins.variable} ${GeneralSans.variable} ${Quote.variable}`}>
+    <html suppressHydrationWarning={true} lang="en" >
+      <body suppressHydrationWarning={true} className={`${Poppins.variable} ${GeneralSans.variable} ${Quote.variable}`}>
         {children}
           <PrismicPreview repositoryName={repositoryName} />
       </body>

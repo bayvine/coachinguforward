@@ -23,7 +23,8 @@ const config: Config = {
       colors: {
         'primary': '#AFD7B3',
         'dark': '#171717',
-        'secondary': '#8FB8CA'
+        'secondary': '#8FB8CA',
+        'offwhite': '#F5F8F8'
       }
     },
   },

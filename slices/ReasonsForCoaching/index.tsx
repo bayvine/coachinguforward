@@ -17,7 +17,7 @@ const ReasonsForCoaching = ({
 }: ReasonsForCoachingProps): JSX.Element => {
   return (
     <SectionWrapper
-      className="py-4"
+      className=" bg-offwhite"
       data-slice-type={slice.slice_type}
       id={slice.slice_type}
       data-slice-variation={slice.variation}
@@ -28,7 +28,7 @@ const ReasonsForCoaching = ({
         <span className="underline">
             {slice.primary.subtitle}
         </span>
-        <h4 className="font-title font-bold text-3xl mb-2">{slice.primary.title}</h4>
+        <h4 className="font-title font-semibold text-3xl mb-2">{slice.primary.title}</h4>
         <PrismicRichText field={slice.primary.descriptiont_itle} />
 
         {/* Reasons */}
@@ -41,7 +41,7 @@ const ReasonsForCoaching = ({
                 <Image src={reason.logo.url || ""} alt={reason.logo.alt || ""} width={reason.logo.dimensions?.width || 0} height={reason.logo.dimensions?.height || 0} className="w-[2.5rem] fill-white"/>
               </div>
               <div>
-                <p  className="text-center font-bold text-lg">{reason.reason_title}</p>
+                <p className="text-center font-bold text-lg">{reason.reason_title}</p>
                 <PrismicRichText components={(type, node, content, children) => <p className="text-center">{content}</p>} field={reason.reason_description} />
                 </div>
             </div>
