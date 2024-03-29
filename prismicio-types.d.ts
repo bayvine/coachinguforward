@@ -363,26 +363,15 @@ interface MenuDocumentData {
   label_for_consultation: prismic.KeyTextField;
 
   /**
-   * Logo title field in *Menu*
-   *
-   * - **Field Type**: Image
-   * - **Placeholder**: *None*
-   * - **API ID Path**: menu.logo_title
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#image
-   */
-  logo_title: prismic.ImageField<never>;
-
-  /**
    * Title field in *Menu*
    *
-   * - **Field Type**: Rich Text
+   * - **Field Type**: Text
    * - **Placeholder**: *None*
    * - **API ID Path**: menu.title
    * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
    */
-  title: prismic.RichTextField;
+  title: prismic.KeyTextField;
 }
 
 /**

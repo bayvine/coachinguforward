@@ -3,6 +3,8 @@ import "./globals.css";
 import { PrismicPreview } from "@prismicio/next";
 import { repositoryName } from "@/prismicio";
 import localFont from 'next/font/local'
+import clsx from "clsx";
+import Navbar from "@/components/Navbar";
  
 // Font files can be colocated inside of `app`
 const Poppins = localFont({ 
@@ -109,10 +111,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html suppressHydrationWarning={true} lang="en" >
-      <body suppressHydrationWarning={true} className={`${Poppins.variable} ${GeneralSans.variable} ${Quote.variable}`}>
+    <html suppressHydrationWarning={true} lang="en">
+      <body suppressHydrationWarning={true} className={clsx(['overflow-x-hidden', `${Poppins.variable} ${GeneralSans.variable} ${Quote.variable}`])}>
+        <Navbar />
         {children}
-          <PrismicPreview repositoryName={repositoryName} />
+        <PrismicPreview repositoryName={repositoryName} />
       </body>
     </html>
   );

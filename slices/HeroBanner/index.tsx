@@ -17,7 +17,7 @@ const HeroBanner = ({ slice }: HeroBannerProps): JSX.Element => {
   return (
     <SectionWrapper
       id={slice.slice_type}
-      className="min-h-[40rem] flex justify-end pb-[4rem] flex-col bg-black relative text-white"
+      className="min-h-[40rem] flex justify-end pb-[1rem] flex-col bg-black relative text-white"
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
     >
@@ -35,7 +35,6 @@ const HeroBanner = ({ slice }: HeroBannerProps): JSX.Element => {
         {/* Button group */}
         <div className="mt-4 flex flex-col gap-3 items-center">
           <Button styleType="primary" className="w-full">Get a free consultation</Button>
-          <span>Or</span>
           <Button styleType="no-style-secondary">Contact me</Button>
         </div>
       </div>
