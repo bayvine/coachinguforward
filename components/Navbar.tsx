@@ -5,53 +5,7 @@ import SectionWrapper from './SectionWrapper'
 import clsx from 'clsx';
 import { MobileNavMenu } from './MobileNavMenu';
 import { getNavigationData } from '@/utils/utils';
-import { asText } from '@prismicio/client'
-
-
-const Hamburger = ({ handleClick, closed }: { 
-     handleClick: () => void, 
-     closed?: boolean
-}) => {
-	return (
-		<button
-			onClick={handleClick}
-			className="lg:hidden flex items-center justify-center w-6 origin-left"
-			aria-label="Click to open menu"
-		>
-			{closed ? (
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					fill="none"
-					viewBox="0 0 24 24"
-					strokeWidth="1.5"
-					stroke="currentColor"
-					className="w-6 h-6"
-				>
-					<path
-						strokeLinecap="round"
-						strokeLinejoin="round"
-						d="M6 18L18 6M6 6l12 12"
-					/>
-				</svg>
-			) : (
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					fill="none"
-					viewBox="0 0 24 24"
-					strokeWidth="1.5"
-					stroke="currentColor"
-					className="w-6 h-6"
-				>
-					<path
-						strokeLinecap="round"
-						strokeLinejoin="round"
-						d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-					/>
-				</svg>
-			)}
-		</button>
-	)
-}
+import { Hamburger } from './Hamburger';
 
 
 const Navbar = () => {
@@ -94,7 +48,7 @@ const Navbar = () => {
 
                          <div className='font-bold'>{title}</div>
                <div className=''>
-                    <Hamburger      
+                    <Hamburger  
                          handleClick={() => setMobileMenu((prev) => !prev)}
                     />
                </div>
@@ -102,7 +56,6 @@ const Navbar = () => {
               
                </SectionWrapper>
                
-
                {/* This is the collapsed mobile menu. */}
                <SectionWrapper
 				className={clsx([
