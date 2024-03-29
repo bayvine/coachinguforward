@@ -87,9 +87,8 @@ const Navbar = () => {
                
 
                <SectionWrapper onScroll={changeNavBg} as='nav' id="nav" className={clsx([
-               navBg && 'bg-offwhite text-black',
-               !navBg && 'bg-none text-white',
-               'text-white fixed z-50 top-0 left-0 w-full transition-all duration-75 ease-linear'
+               navBg ? 'bg-offwhite text-black' : 'bg-none text-white',
+               'fixed z-50 top-0 left-0 w-full transition-all duration-75 ease-linear'
           ])}>
                <div className='flex justify-between items-center w-full'>
 
