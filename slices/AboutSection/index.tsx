@@ -35,7 +35,7 @@ const AboutSection = ({ slice }: AboutSectionProps): JSX.Element => {
               <PrismicRichText field={paragraphWithQuote.paragraph} />
             
               {prismicio.asText(paragraphWithQuote.quote_field)  &&
-                <div className="italic text-xl my-5 w-[370px] mx-auto font-quote text-center text-primary ">
+                <div className="italic text-xl my-5  font-quote text-primary ">
                   {prismicio.asText(paragraphWithQuote.quote_field)}
                 </div>
               }
@@ -51,10 +51,10 @@ const AboutSection = ({ slice }: AboutSectionProps): JSX.Element => {
             <Image className="absolute bottom-0  right-0 w-[120px]" src={slice?.primary.credential_symbol.url || ""} alt={slice.primary.credential_symbol.alt || ""} width={slice.primary.credential_symbol.dimensions?.width} height={slice.primary.credential_symbol.dimensions?.height} />
           </div>  
           {/* Button group */}
-          <div className="flex flex-col gap-4">
-          <Button styleType="primary">Book your session</Button>
-          <Button styleType='tertiary'>Book a free introduction</Button>
-          </div>
+          {slice.primary.free_consultation_label && slice.primary.cta_label && <div className="flex flex-col gap-4">
+            <Button styleType="primary">{slice.primary.cta_label}</Button>
+            <Button styleType='tertiary'>{slice.primary.free_consultation_label}</Button>
+          </div>}
         </div>
       </div>
 
