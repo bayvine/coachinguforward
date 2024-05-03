@@ -1,12 +1,15 @@
 import { repositoryName } from '@/prismicio';
 import { createClient } from '@prismicio/client';
 import { PrismicNextLink } from '@prismicio/next';
+import clsx from 'clsx';
 import Link from 'next/link';
 import React from 'react'
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaWhatsapp } from 'react-icons/fa';
+import { FaX, FaXTwitter } from 'react-icons/fa6';
 
 
 interface SocialMediaProps { 
+     className?: string
 
 }
 const SocialMedia = async (props : SocialMediaProps) => {
@@ -22,12 +25,15 @@ const SocialMedia = async (props : SocialMediaProps) => {
      
   return (
        <div>
-            <ul>
-                 {linkedin && <PrismicNextLink field={linkedin} ><FaLinkedin /></PrismicNextLink>}
-                 {facebook && <PrismicNextLink field={facebook} ><FaFacebook /></PrismicNextLink>}
-                 {whatsapp && <PrismicNextLink field={whatsapp} ><FaWhatsapp /></PrismicNextLink>}
-                 {twitter && <PrismicNextLink field={twitter} ><FaTwitter /></PrismicNextLink>}
-                 {instagram && <PrismicNextLink field={instagram} ><FaInstagram /></PrismicNextLink>}
+            <ul className={clsx([
+                 props.className,
+                    'flex gap-2 text-3xl'
+            ])}>
+                 {linkedin && <PrismicNextLink field={linkedin} ><FaLinkedin  className='fill-blue-600 '/></PrismicNextLink>}
+                 {facebook && <PrismicNextLink field={facebook} ><FaFacebook className=' fill-blue-700' /></PrismicNextLink>}
+                 {whatsapp && <PrismicNextLink field={whatsapp} ><FaWhatsapp className=' fill-green-600'/></PrismicNextLink>}
+                 {twitter && <PrismicNextLink field={twitter} ><FaXTwitter className=' fill-current'/></PrismicNextLink>}
+                 {instagram && <PrismicNextLink field={instagram} ><FaInstagram className=' fill-rose-600' /></PrismicNextLink>}
             </ul>
     </div>
   )

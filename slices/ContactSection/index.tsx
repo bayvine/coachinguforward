@@ -1,8 +1,12 @@
 import SectionWrapper from "@/components/SectionWrapper";
-import { Content } from "@prismicio/client";
+import { Client, Content, createClient } from "@prismicio/client";
 import { SliceComponentProps } from "@prismicio/react";
 import { asText } from '@prismicio/client'
 import Button from "@/components/Button";
+import { FaEnvelope, FaLocationArrow, FaPhone, FaPhoneSquare } from "react-icons/fa";
+import { repositoryName } from "@/prismicio";
+import { FaLocationPin, FaLocationPinLock } from "react-icons/fa6";
+import SocialMedia from "@/components/SocialMedia";
 /**
  * Props for `ContactSection`.
  */
@@ -12,7 +16,9 @@ export type ContactSectionProps =
 /**
  * Component for "ContactSection" Slices.
  */
-const ContactSection = ({ slice }: ContactSectionProps): JSX.Element => {
+const ContactSection = async({ slice }: ContactSectionProps): Promise<JSX.Element> => {
+    const client = createClient(repositoryName);
+    const {data} = await client.getSingle("home")
   return (
     <SectionWrapper
       id={slice.slice_type}
@@ -23,6 +29,8 @@ const ContactSection = ({ slice }: ContactSectionProps): JSX.Element => {
       <div>
         <h6 className="text-3xl font-title font-semibold mb-2">{slice.primary.title}</h6>
         <p>{asText(slice.primary.subtitle)}</p>
+
+      
 
         <form className="my-5 flex flex-col gap-5">
           <div className="flex flex-col gap-2">
@@ -66,6 +74,37 @@ const ContactSection = ({ slice }: ContactSectionProps): JSX.Element => {
           </Button>
           
         </form>
+
+
+          <div className="mt-10">
+            <p className="my-4 font-semibold text-2xl font-body">{slice.primary.contact_information_title}</p>
+            <p className="text-sm">{asText(slice.primary.contact_information_description)}</p>
+            
+            <div className="mt-10">
+              <ul className="flex flex-col gap-5">
+                <li>
+                  <span className="flex items-center gap-3">
+                    <FaPhone className="mr-2 rotate-90 text-2xl" /> <a href={`tel:${data.phone_number}`}>{data.phone_number}</a>
+                  </span>
+                </li>
+                <li>
+                   <span className="flex items-center gap-3">
+                    <FaEnvelope className="mr-2 text-2xl" /> <a href={`mailto:${data.email_address}`}>{data.email_address}</a>
+                  </span>
+                </li>
+                <li>
+                  <span className="flex items-center gap-3">
+                    <FaLocationArrow className="mr-2  text-2xl" /> {data.location}
+                  </span>
+                </li>
+            </ul>
+            
+            <p className="mt-8"> <span>Or find me on...</span>
+              <SocialMedia className="mt-4"/>
+            </p>
+            </div>
+          </div>
+
      </div>
     </SectionWrapper>
   );
